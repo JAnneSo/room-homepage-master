@@ -7,20 +7,11 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/css/swiper-bundle.css">
+  <link rel="stylesheet" href="style/css/index.css">
   <title>Frontend Mentor | Room homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -44,7 +35,7 @@
         </ul>
       </nav>
     </div>
-    <img src="images/logo.svg" alt="room-logo">
+    <img class="logo" src="images/logo.svg" alt="room-logo">
     <!-- DESKTOP MENU -->
     <nav class="desktop-menu">
       <ul>
@@ -58,31 +49,46 @@
 
   <div class="grid-container">
     <!-- BLOCK 1 -->
-    <div>
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="desktop-image" src="images/desktop-image-hero-1.jpg" alt="image">
-            <img class="mobile-image" src="images/mobile-image-hero-1.jpg" alt="image">
-          </div>
-          <div class="swiper-slide">
-            <img class="desktop-image" src="images/desktop-image-hero-2.jpg" alt="image">
-            <img class="mobile-image" src="images/mobile-image-hero-2.jpg" alt="image">
-          </div>
-          <div class="swiper-slide">
-            <img class="desktop-image" src="images/desktop-image-hero-3.jpg" alt="image">
-            <img class="mobile-image" src="images/mobile-image-hero-3.jpg" alt="image">
-          </div>
+    <!-- <div> -->
+    <!-- Swiper 1-->
+    <div class="swiper-container swiper-image">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="desktop-image" src="images/desktop-image-hero-1.jpg" alt="image">
+          <img class="mobile-image" src="images/mobile-image-hero-1.jpg" alt="image">
+        </div>
+        <div class="swiper-slide">
+          <img class="desktop-image" src="images/desktop-image-hero-2.jpg" alt="image">
+          <img class="mobile-image" src="images/mobile-image-hero-2.jpg" alt="image">
+        </div>
+        <div class="swiper-slide">
+          <img class="desktop-image" src="images/desktop-image-hero-3.jpg" alt="image">
+          <img class="mobile-image" src="images/mobile-image-hero-3.jpg" alt="image">
         </div>
       </div>
     </div>
+    <!-- </div> -->
+    <!-- Add Arrows -->
+    <div class="arrows">
+
+      <div class="swiper-button-next">
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="swiper-button-prev">
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+        </svg>
+      </div>
+    </div>
     <!-- BLOCK 2 -->
-    <div>
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+    <!-- <div> -->
+    <!-- Swiper 2-->
+    <div class="swiper-container swiper-text">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-text_content">
             <h1>Discover innovative ways to decorate</h1>
             <p>We provide unmatched quality, comfort, and style for property owners across the country.
               Our experts combine form and function in bringing your vision to life. Create a room in your
@@ -94,7 +100,9 @@
               </svg>
             </button>
           </div>
-          <div class="swiper-slide">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-text_content">
             <h1>We are available all across the globe</h1>
             <p>With stores all over the world, it's easy for you to find furniture for your home or place of business.
               Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
@@ -106,7 +114,9 @@
               </svg>
             </button>
           </div>
-          <div class="swiper-slide">
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-text_content">
             <h1>Manufactured with the best materials</h1>
             <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced
               technology
@@ -121,22 +131,14 @@
           </div>
         </div>
       </div>
-      <!-- Add Arrows -->
-      <div class="swiper-button-next"><svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
-        </svg></div>
-      <div class="swiper-button-prev">
-        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
-        </svg>
-      </div>
     </div>
+    <!-- </div> -->
     <!-- BLOCK 3 -->
-    <div>
+    <div class="image-dark">
       <img src="images/image-about-dark.jpg" alt="image">
     </div>
     <!-- BLOCK 4 -->
-    <div>
+    <div class="description">
       <h2>About our furniture</h2>
       <p>Our multifunctional collection blends design and function to suit your individual taste.
         Make each room unique, or pick a cohesive theme that best express your interests and what
@@ -144,7 +146,7 @@
         or anything in between. Product specialists are available to help you create your dream space.</p>
     </div>
     <!-- BLOCK 5 -->
-    <div>
+    <div class="image-ligth">
       <img src="images/image-about-light.jpg" alt="image">
     </div>
 
@@ -152,8 +154,24 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/JAnneSo/room-homepage-master" target="_blank">Anne-Sophie J.</a>
   </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
 </body>
 
 </html>
