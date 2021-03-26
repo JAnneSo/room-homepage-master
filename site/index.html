@@ -16,25 +16,26 @@
 
 <body>
 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <button class="close-menu-btn" id="close-menu-btn">
+        <img src="images/icon-close.svg" alt="close">
+      </button>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
   <!-- HEADER -->
   <header>
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-      <button class="burger-btn">
-        <img src="images/icon-hamburger.svg" alt="menu">
-      </button>
-      <nav>
-        <button class="close-menu-btn">
-          <img src="images/icon-close.svg" alt="close">
-        </button>
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </div>
+    <button class="burger-btn" id="burger-btn">
+      <img src="images/icon-hamburger.svg" alt="menu">
+    </button>
+
     <img class="logo" src="images/logo.svg" alt="room-logo">
     <!-- DESKTOP MENU -->
     <nav class="desktop-menu">
@@ -48,9 +49,7 @@
   </header>
 
   <div class="grid-container">
-    <!-- BLOCK 1 -->
-    <!-- <div> -->
-    <!-- Swiper 1-->
+    <!-- BLOCK 1 - Swiper 1-->
     <div class="swiper-container swiper-image">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -67,7 +66,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
     <!-- Add Arrows -->
     <div class="arrows">
 
@@ -82,9 +80,7 @@
         </svg>
       </div>
     </div>
-    <!-- BLOCK 2 -->
-    <!-- <div> -->
-    <!-- Swiper 2-->
+    <!-- BLOCK 2 - Swiper 2-->
     <div class="swiper-container swiper-text">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -132,7 +128,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
     <!-- BLOCK 3 -->
     <div class="image-dark">
       <img src="images/image-about-dark.jpg" alt="image">
@@ -172,6 +167,9 @@
       keyboard: true,
     });
   </script>
+
+  <!-- Menu JS -->
+  <script src="js/burger-menu.js"></script>
 </body>
 
 </html>
