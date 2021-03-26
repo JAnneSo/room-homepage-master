@@ -3,6 +3,7 @@ body {
   font-size: 12px;
   margin: 0;
   background-color: white;
+  position: relative;
 }
 
 body button {
@@ -49,13 +50,13 @@ body .logo {
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 951px) {
   .mobile-image {
     display: none;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   .desktop-image {
     display: none;
   }
@@ -107,13 +108,13 @@ header {
   z-index: 3;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 951px) {
   header {
     padding: 64px 0 0 64px;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   header {
     width: 100%;
     margin-top: 48px;
@@ -128,7 +129,7 @@ header .logo {
   width: auto;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   header .desktop-menu {
     display: none;
   }
@@ -169,13 +170,13 @@ header .desktop-menu li:hover::after {
   transition: width 0.4s ease;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 951px) {
   header .burger-btn {
     display: none;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   header .burger-btn {
     position: absolute;
     top: -1px;
@@ -188,7 +189,7 @@ header .desktop-menu li:hover::after {
   display: grid;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 951px) {
   .grid-container {
     min-height: 750px;
     height: 100vh;
@@ -240,7 +241,7 @@ header .desktop-menu li:hover::after {
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   .grid-container {
     -ms-grid-columns: 70.135% 29.87%;
         grid-template-columns: 70.135% 29.87%;
@@ -301,7 +302,7 @@ header .desktop-menu li:hover::after {
   overflow-x: hidden;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   .swiper-container .swiper-slide {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -312,46 +313,57 @@ header .desktop-menu li:hover::after {
   }
 }
 
-.swiper-container .swiper-text_content {
+.swiper-container .swiper-slide-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-container .swiper-slide-text .swiper-text_content {
   padding: 0 32px;
 }
 
-@media (min-width: 1000px) {
-  .swiper-container .swiper-text_content {
-    margin: 20% auto;
+@media (min-width: 951px) {
+  .swiper-container .swiper-slide-text .swiper-text_content {
     max-width: 400px;
   }
 }
 
-@media (max-width: 999px) {
-  .swiper-container .swiper-text_content {
+@media (max-width: 950px) {
+  .swiper-container .swiper-slide-text .swiper-text_content {
     margin: 72px auto;
     max-width: 550px;
   }
 }
 
-.swiper-container .swiper-text_content h1 {
+.swiper-container .swiper-slide-text .swiper-text_content h1 {
   font-weight: 600;
   letter-spacing: -1.66667px;
   color: black;
 }
 
-@media (min-width: 1000px) {
-  .swiper-container .swiper-text_content h1 {
+@media (min-width: 951px) {
+  .swiper-container .swiper-slide-text .swiper-text_content h1 {
     font-size: 40px;
     line-height: 45px;
     margin: 0 0 22px 0;
   }
 }
 
-@media (max-width: 999px) {
-  .swiper-container .swiper-text_content h1 {
+@media (max-width: 950px) {
+  .swiper-container .swiper-slide-text .swiper-text_content h1 {
     font-size: 28px;
     line-height: 31px;
   }
 }
 
-.swiper-container .swiper-text_content button {
+.swiper-container .swiper-slide-text .swiper-text_content button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,19 +373,19 @@ header .desktop-menu li:hover::after {
   color: black;
 }
 
-@media (min-width: 1000px) {
-  .swiper-container .swiper-text_content button {
+@media (min-width: 951px) {
+  .swiper-container .swiper-slide-text .swiper-text_content button {
     margin-top: 32px;
   }
 }
 
-@media (max-width: 999px) {
-  .swiper-container .swiper-text_content button {
+@media (max-width: 950px) {
+  .swiper-container .swiper-slide-text .swiper-text_content button {
     margin-top: 52px;
   }
 }
 
-.swiper-container .swiper-text_content button span {
+.swiper-container .swiper-slide-text .swiper-text_content button span {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -382,15 +394,15 @@ header .desktop-menu li:hover::after {
   text-transform: uppercase;
 }
 
-.swiper-container .swiper-text_content button svg {
+.swiper-container .swiper-slide-text .swiper-text_content button svg {
   margin-left: 43px;
 }
 
-.swiper-container .swiper-text_content button:hover {
+.swiper-container .swiper-slide-text .swiper-text_content button:hover {
   color: #a1a1a1;
 }
 
-.swiper-container .swiper-text_content button:hover svg path {
+.swiper-container .swiper-slide-text .swiper-text_content button:hover svg path {
   fill: #a1a1a1 !important;
 }
 
@@ -416,34 +428,39 @@ header .desktop-menu li:hover::after {
   outline: none;
   height: 100%;
   width: 50%;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
 .arrows .swiper-button-next:hover,
 .arrows .swiper-button-prev:hover {
   background-color: #454545;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
 }
 
-@media (min-width: 1000px) {
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 32px;
+}
+
+@media (min-width: 951px) {
   .description {
-    margin: 68px auto 67px;
-    padding: 0 30px;
     max-width: 484px;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 950px) {
   .description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 32px;
     max-width: 500px;
   }
 }
@@ -463,21 +480,10 @@ header .desktop-menu li:hover::after {
   font-size: 11px;
   text-align: center;
   color: #454545;
-}
-
-@media (min-width: 1000px) {
-  .attribution {
-    position: absolute;
-    bottom: 3px;
-    right: 10px;
-  }
-}
-
-@media (max-width: 999px) {
-  .attribution {
-    padding: 5px 0 3px;
-    background-color: #c5c7c9;
-  }
+  padding: 5px 0 3px;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
 }
 
 .attribution a {
