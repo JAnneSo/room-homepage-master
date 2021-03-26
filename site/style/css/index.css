@@ -245,8 +245,8 @@ header .desktop-menu li:hover::after {
   .grid-container {
     -ms-grid-columns: 70.135% 29.87%;
         grid-template-columns: 70.135% 29.87%;
-    -ms-grid-rows: 20.2% 3.8% 27% 15% 20% 14%;
-        grid-template-rows: 20.2% 3.8% 27% 15% 20% 14%;
+    -ms-grid-rows: 20.615% 3.798% 27.803% 16.139% 20.547% 15.393%;
+        grid-template-rows: 20.615% 3.798% 27.803% 16.139% 20.547% 15.393%;
   }
   .grid-container .swiper-image {
     -ms-grid-column: 1;
@@ -481,9 +481,20 @@ header .desktop-menu li:hover::after {
   text-align: center;
   color: #454545;
   padding: 5px 0 3px;
-  position: absolute;
-  bottom: 0;
-  right: 5px;
+}
+
+@media (min-width: 951px) {
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+  }
+}
+
+@media (max-width: 950px) {
+  .attribution {
+    margin-top: 9.5%;
+  }
 }
 
 .attribution a {
