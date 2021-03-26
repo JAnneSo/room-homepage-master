@@ -450,18 +450,19 @@ header .desktop-menu li:hover::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 32px;
 }
 
 @media (min-width: 951px) {
   .description {
     max-width: 484px;
+    padding: 0 48px;
   }
 }
 
 @media (max-width: 950px) {
   .description {
     max-width: 500px;
+    padding: 0 32px;
   }
 }
 

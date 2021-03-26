@@ -318,12 +318,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 32px;
+
     @include responsive(desktop) {
         max-width: 484px;
+        padding: 0 48px;
     }
     @include responsive(mobile) {
         max-width: 500px;
+        padding: 0 32px;
     }
     h2 {
         font-weight: bold;

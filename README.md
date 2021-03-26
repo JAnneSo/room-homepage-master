@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://www.frontendmentor.io/solutions/room-homepage-html-scss-js-n5jfPChwI](https://www.frontendmentor.io/solutions/room-homepage-html-scss-js-n5jfPChwI)
+- Live Site URL: [https://room-homepage-master-theta.vercel.app/](https://room-homepage-master-theta.vercel.app/)
 
 ## My process
 
