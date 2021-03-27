@@ -225,7 +225,6 @@ header {
 .swiper-container {
     width: 100%;
     .swiper-wrapper {
-        touch-action: none;
         overflow-x: hidden;
     }
     .swiper-slide {
@@ -306,6 +305,10 @@ header {
         height: 100%;
         width: 50%;
         transition: background-color 0.3s ease-out;
+        .button {
+            width: 100%;
+            height: 100%;
+        }
     }
     .swiper-button-next:hover,
     .swiper-button-prev:hover {
