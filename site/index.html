@@ -35,8 +35,8 @@
     <button class="burger-btn" id="burger-btn">
       <img src="images/icon-hamburger.svg" alt="menu">
     </button>
-
-    <img class="logo" src="images/logo.svg" alt="room-logo">
+    <a href="#">
+      <img class="logo" src="images/logo.svg" alt="room-logo"></a>
     <!-- DESKTOP MENU -->
     <nav class="desktop-menu">
       <ul>
@@ -68,7 +68,6 @@
     </div>
     <!-- Add Arrows -->
     <div class="arrows">
-
       <div class="swiper-button-next">
         <button>
           <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +160,17 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".swiper-container", {
+    var swiperImage = new Swiper(".swiper-image", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      loop: true,
+      mousewheel: true,
+      keyboard: true,
+    });
+    var swiperText = new Swiper(".swiper-text", {
       cssMode: true,
       navigation: {
         nextEl: ".swiper-button-next",
